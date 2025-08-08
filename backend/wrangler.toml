@@ -1,0 +1,11 @@
+name = "mode-dz-backend"
+main = "worker.js"
+compatibility_date = "2024-08-08"
+
+[vars]
+ENVIRONMENT = "production"
+CORS_ORIGINS = "https://mode-dz-frontend.pages.dev"
+
+[[env.production.vars]]
+MONGODB_URL = "mongodb+srv://toufikdjaoui:toufikdjaoui@cluster0.xycidxj.mongodb.net/mode_dz?retryWrites=true&w=majority"
+JWT_SECRET_KEY = "mode-dz-super-secret-jwt-key-production-2024"

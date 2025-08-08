@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: mode-dz-backend
+    env: python
+    region: frankfurt  # Proche de l'Europe
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: MONGODB_URL
+        value: mongodb+srv://toufikdjaoui:toufikdjaoui@cluster0.xycidxj.mongodb.net/mode_dz?retryWrites=true&w=majority
+      - key: JWT_SECRET_KEY
+        value: mode-dz-super-secret-jwt-key-production-2024
+      - key: ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: https://mode-dz-frontend.pages.dev
+    rootDir: backend
+    plan: free

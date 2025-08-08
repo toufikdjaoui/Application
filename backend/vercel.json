@@ -1,0 +1,20 @@
+{
+  "builds": [
+    {
+      "src": "app/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app/main.py"
+    }
+  ],
+  "env": {
+    "MONGODB_URL": "mongodb+srv://toufikdjaoui:toufikdjaoui@cluster0.xycidxj.mongodb.net/mode_dz?retryWrites=true&w=majority",
+    "JWT_SECRET_KEY": "mode-dz-super-secret-jwt-key-production-2024",
+    "ENVIRONMENT": "production",
+    "CORS_ORIGINS": "https://mode-dz-frontend.pages.dev"
+  }
+}
