@@ -1,0 +1,73 @@
+# FastAPI and ASGI
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+gunicorn==21.2.0
+
+# Database
+motor==3.3.2  # MongoDB async driver
+pymongo==4.6.0
+beanie==1.24.0  # ODM for MongoDB
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.6
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+
+# Validation & Serialization
+pydantic==2.5.0
+pydantic-settings==2.1.0
+email-validator==2.1.0
+
+# Image Processing
+Pillow==10.1.0
+python-magic==0.4.27
+
+# File Upload & Storage
+aiofiles==23.2.1
+
+# HTTP Client
+httpx==0.25.2
+aiohttp==3.9.1
+
+# Background Tasks
+celery[redis]==5.3.4
+flower==2.0.1
+
+# Caching
+redis==5.0.1
+hiredis==2.2.3
+
+# WebSocket Support
+websockets==12.0
+
+# AI/ML for Recommendations
+scikit-learn==1.3.2
+numpy==1.25.2
+pandas==1.5.3
+
+# Monitoring & Logging
+prometheus-client==0.19.0
+structlog==23.2.0
+
+# Development & Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+faker==20.1.0
+
+# CORS
+python-cors==1.7.0
+
+# Date/Time handling
+python-dateutil==2.8.2
+
+# Internationalization
+babel==2.13.1
+
+# Payment Integration (simulated for now)
+stripe==7.8.0
+
+# Utils
+python-slugify==8.0.1
+qrcode[pil]==7.4.2
