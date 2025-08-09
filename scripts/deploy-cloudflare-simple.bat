@@ -18,7 +18,7 @@ call npm run build
 
 echo.
 echo 🚀 Deploiement frontend sur Cloudflare Pages...
-wrangler pages deploy dist --project-name mode-dz-frontend
+wrangler deploy --assets=./dist
 
 echo.
 echo ✅ Frontend deploye !

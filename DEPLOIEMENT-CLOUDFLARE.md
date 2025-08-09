@@ -20,15 +20,27 @@ wrangler login
 ```
 
 ### 3. Déploiement Frontend (Pages)
+
+#### Option 1 : Cloudflare Pages (Recommandé)
 ```bash
 cd frontend
 npm run build
 wrangler pages deploy dist --project-name mode-dz-frontend
 ```
 
-### Alternative : Déploiement simplifié
+#### Option 2 : Worker avec Assets
 ```bash
-# Utiliser le script automatique
+cd frontend
+npm run build
+wrangler deploy --assets=./dist
+```
+
+#### Option 3 : Scripts automatiques
+```bash
+# Pages (recommandé)
+./scripts/deploy-cloudflare-pages.bat
+
+# Worker avec assets
 ./scripts/deploy-cloudflare-simple.bat
 ```
 
