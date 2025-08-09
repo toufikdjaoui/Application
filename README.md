@@ -194,3 +194,4 @@ Les contributions sont les bienvenues ! Veuillez lire le guide de contribution a
 
 ## Licence
 MIT License - voir le fichier LICENSE pour plus de détails.
+"# Test rebuild"  
