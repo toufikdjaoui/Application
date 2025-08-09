@@ -5,6 +5,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:cloudflare": "react-scripts build && npm run copy-to-root",
+    "copy-to-root": "xcopy /E /I /Y build\\* ..\\ && echo Build copied to root",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
