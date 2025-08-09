@@ -1,9 +1,0 @@
-name = "mode-dz-frontend"
-compatibility_date = "2024-08-08"
-
-[assets]
-directory = "./dist"
-
-[env.production.vars]
-REACT_APP_API_URL = "https://mode-dz-backend.your-subdomain.workers.dev"
-REACT_APP_ENVIRONMENT = "production"
