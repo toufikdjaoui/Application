@@ -5,7 +5,7 @@
 
 [build.environment]
   NODE_VERSION = "18"
-  REACT_APP_API_URL = "https://mode-dz-backend.onrender.com"
+  REACT_APP_API_URL = "https://application-dcvek8cfx-toufiks-projects-dc2915c0.vercel.app"
 
 [[redirects]]
   from = "/*"
