@@ -34,6 +34,11 @@ Build output directory: frontend/dist
 Root directory: (leave empty)
 ```
 
+**⚠️ ATTENTION - Settings incorrects à éviter :**
+❌ `npx wrangler deploy` (c'est pour Workers, pas React!)
+❌ `wrangler pages deploy`
+❌ Toute commande avec `wrangler`
+
 **Environment variables :**
 ```
 REACT_APP_API_URL = https://votre-backend.onrender.com
