@@ -1,15 +1,9 @@
 name = "mode-dz-frontend"
 compatibility_date = "2024-08-08"
 
-[build]
-command = "npm run build"
-destination = "dist"
+[assets]
+directory = "./dist"
 
-[[env.production.vars]]
+[env.production.vars]
 REACT_APP_API_URL = "https://mode-dz-backend.your-subdomain.workers.dev"
-REACT_APP_ENVIRONMENT = "production"
-NODE_VERSION = "18"
-
-[build.environment_variables]
-NODE_VERSION = "18"
 REACT_APP_ENVIRONMENT = "production"

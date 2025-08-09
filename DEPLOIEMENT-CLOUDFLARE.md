@@ -26,6 +26,12 @@ npm run build
 wrangler pages deploy dist --project-name mode-dz-frontend
 ```
 
+### Alternative : Déploiement simplifié
+```bash
+# Utiliser le script automatique
+./scripts/deploy-cloudflare-simple.bat
+```
+
 ### 4. Déploiement Backend (Workers)
 ```bash
 cd backend

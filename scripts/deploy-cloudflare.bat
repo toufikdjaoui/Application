@@ -18,7 +18,7 @@ call npm run build
 
 echo.
 echo 🚀 Deploiement frontend sur Cloudflare Pages...
-wrangler pages deploy dist --project-name mode-dz-frontend --compatibility-date 2024-08-08
+wrangler pages deploy dist --project-name mode-dz-frontend
 
 echo.
 echo ⚡ Deploiement backend Worker...
