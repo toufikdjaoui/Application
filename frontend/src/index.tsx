@@ -6,7 +6,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Toaster } from 'react-hot-toast';
 
 import './index.css';
-import './i18n';
+import './i18n-simple';
 import App from './App';
 import { AuthProvider } from './context/AuthContext';
 import { LanguageProvider } from './context/LanguageContext';
