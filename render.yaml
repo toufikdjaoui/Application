@@ -1,11 +1,10 @@
 services:
   - type: web
     name: mode-dz-backend
-    env: python
+    env: docker
     region: frankfurt
     plan: free
-    buildCommand: "cd backend && pip install -r requirements.txt"
-    startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: MONGODB_URL
         value: "mongodb+srv://toufikdjaoui:toufikdjaoui@cluster0.xycidxj.mongodb.net/mode_dz?retryWrites=true&w=majority"
