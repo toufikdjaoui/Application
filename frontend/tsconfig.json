@@ -32,6 +32,19 @@
     }
   },
   "include": [
-    "src"
+    "src/index.tsx",
+    "src/react-app-env.d.ts"
+  ],
+  "exclude": [
+    "src/components",
+    "src/pages", 
+    "src/context",
+    "src/services",
+    "src/hooks",
+    "src/utils",
+    "src/types",
+    "src/i18n.ts",
+    "src/i18n-simple.ts",
+    "src/App.tsx"
   ]
 }
